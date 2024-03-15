@@ -1,0 +1,21 @@
+RabbitToken:                                         # 机器人给的token
+MaxTab: 10                                           # 同时登陆的人数
+CloseTime: 180                                       # 页面回收时间
+username: admin                                      # 管理员的username
+password: admin                                      # 管理员密码
+Title: QRabbit                                       # 标题
+mode: 2                                              # 模式
+ServerHost: log.madrabbit.eu.org                       # 中心服务器host
+BotApiToken:                                         # 对接机器人的认证token
+WskeyCron: ''                                        # wskey的转换定时
+SyncCkCron:                                          # 同步ck的定时
+SyncCkCronStatus: true                               # 是否开启同步ck
+CheckCkCron:                                         # 检测ck的定时
+BeanCron:                                            # 资产通知的定时
+BeanCronStatus: true                                 # 是否开启资产通知
+WXPUSHER_APP_TOKEN:                                  # 用于wxpusher通知的自己token
+WXPUSHER_UID:                                        # 接受wxpusher通知的uid
+TJ_username:                                         # 图鉴的账号名
+TJ_password:                                         # 图鉴账号密码
+GitProxy:                                            # 拉库代理
+LoginProxy:                                          # 登录代理

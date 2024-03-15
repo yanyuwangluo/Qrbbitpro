@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<section
+        style="max-width: 100%; width: 24rem; margin: 0.5rem auto; border: 2px solid #212122; border-radius: 5px; box-shadow: 0px -3px 5px #f4f4f4,5px 0px 5px #eeeeee,0px 5px 5px #eeeeee,-3px 0px 5px #f4f4f4;">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewbox="0 0 750 60" style="enable-background:new 0 0 750 60;" xml:space="preserve"><g><text style="fill: #606060;font-size: 2.26rem;" x="50%" y="65%" text-anchor="middle" stroke-width="1">资产通知</text><animatemotion></animatemotion></g></svg>
+    <hr style="border: 1px solid #ccc; margin: 1rem auto; width: 24rem; max-width: 100%;">
+    <section style="width: 100%; box-sizing: border-box; padding: 1rem 0.5rem;">
+        <section
+                style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; padding-left: 14px; box-sizing: border-box;">
+            <section
+                    style="width: 6rem; height: 6rem; border-radius: 50%; background: url({{ user_info['avatar'] }})  no-repeat center center / cover; ">
+                {% if user_info['is_plus'] %}
+                <img src="https://img12.360buyimg.com/img/s156x183_jfs/t1/197950/32/22545/13864/6267c909E533ac726/78d7a963a8c4fc9f.png"
+                     style="position: absolute;width: 98px; height: 116px; top: 190px;" alt="Avatar">
+                {% endif %}
+            </section>
+            <section style="border-left: 1px solid #979797;margin-left:0.5rem;padding-left: 0.5rem;box-sizing: border-box;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;height: 6.2rem;overflow: hidden;">
+                    <section style="font-size: 0.875rem;color: #4b4b4b;line-height: 14px;display: flex;flex-direction: row;"><p style="margin:0;">
+                        {{ user_info['nickname'] }}</p></section>
+                    <section style="font-size: 0.875rem;color: #4b4b4b;line-height: 14px;display: flex;flex-direction: row;"><img style="height: 14px" src="{{ user_info['levelIcon'] }}" alt=""><p style="margin:0;">
+                        {{ user_info['levelName'] }}</p></section>
+                    <section style="font-size: 0.875rem;color: #4b4b4b;line-height: 14px;"><p style="margin:0;">
+                        京享值：{{ user_info['jx']['data']['score'] }}{{ user_info['jx']['data']['t'] }}{{ user_info['jx']['data']['changeScore'] }}</p></section>
+                    <section style="font-size: 0.875rem;color: #4b4b4b;line-height: 14px;"><p style="margin:0;">
+                        超过{{ user_info['jx']['data']['defeatUserPercent'] }}%会员 {{ user_info['jx']['data']['lastUpdateTime'] }}</p></section>
+<!--                    <section style="font-size: 0.875rem;color: #4b4b4b;line-height: 14px;"><p style="margin:0;">-->
+<!--                        超过50%会员 2022-11-27：↑10</p></section>-->
+            </section>
+        </section>
+    </section>
+
+    <hr style="border: 1px solid #ccc; margin: 1rem auto; width: 24rem; max-width: 100%;">
+    <section
+            style="margin-top:0px;display: inline-block;padding: 2px 20px;box-sizing:border-box;">
+        <section style="display:inline-block;padding-left:10px;vertical-align: top;box-sizing:border-box;"><p
+                style="text-align:center;line-height: 1rem;"><strong><span
+                style="color: #000000;font-size: 1rem;">资产详情</span></strong></p></section>
+                    <section style="margin-left:0.5rem;padding-left: 0.5rem;box-sizing: border-box;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;height: auto;overflow: hidden;">
+                         {% for item in detail_list %}
+                        <section style="font-size: 0.875rem;color: #4b4b4b;line-height: 14px;"><p style="margin:0;">
+                            · {{ item }}</p></section>
+                        {% endfor %}
+                    </section>
+    </section>
+
+    <hr style="border: 1px solid #ccc; margin: 1rem auto; width: 24rem; max-width: 100%;">
+    <section
+            style="margin-top:0px;display: inline-block;padding: 2px 20px;box-sizing:border-box;">
+        <section style="display:inline-block;padding-left:10px;vertical-align: top;box-sizing:border-box;"><p
+                style="text-align:center;line-height: 1rem;"><strong><span
+                style="color: #000000;font-size: 1rem;">京豆收入变化图</span></strong></p></section>
+    </section>
+    <section style="margin-top:0.8rem;box-sizing:border-box;">{{ bean_img }}</section>
+</section>
+</body>
+</html>

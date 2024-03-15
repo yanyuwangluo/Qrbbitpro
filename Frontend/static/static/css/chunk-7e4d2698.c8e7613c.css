@@ -1,0 +1,6 @@
+/*!
+ *  build: vue-admin-better 
+ *  vue-admin-beautiful.com 
+ *  https://gitee.com/chu1204505056/vue-admin-better 
+ *  time: 2024-2-7 13:20:15
+ */.card-header{height:0;display:flex;justify-content:space-between;align-items:center}.el-card .el-card__body{padding:0;padding-left:5%}.no-header-divider .el-card__header{border-bottom-color:transparent}.container_header{position:relative;display:flex;align-items:center;padding-top:10px;padding-left:10px}.Container-container{padding:10px}.Container-container .avatar-container{width:40%;height:40%;border-radius:50%;margin-right:50px}.Container-container .user-container{display:flex;align-items:center}.Container-container .user-container .edit_button{width:50px;position:relative;display:flex;align-items:center;justify-content:center;right:25px;top:-40px}.Container-container .user-container .userInfo{position:relative;top:0;right:0}.Container-container .user-container .userInfo p{width:80px}.Container-container .user-container .userInfo .name{font-size:24px;margin-bottom:10px}.Container-container .user-container .userInfo .access{color:#999;font-size:10px}.Container-container .loginInfo{line-height:10px;font-size:8px;color:#999}.Container-container .loginInfo span{color:#666;margin-left:60px}
