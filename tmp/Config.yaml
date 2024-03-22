@@ -3,7 +3,7 @@ MaxTab: 10                                           # 同时登陆的人数
 CloseTime: 180                                       # 页面回收时间
 username: admin                                      # 管理员的username
 password: admin                                      # 管理员密码
-Title: QRabbit                                       # 标题
+Title: Faker Rabbit                                  # 标题
 mode: 2                                              # 模式
 ServerHost: log.madrabbit.eu.org                       # 中心服务器host
 BotApiToken:                                         # 对接机器人的认证token

@@ -1,11 +1,3 @@
-<!--
- * @Author: yanyuwangluo 1915241107@qq.com
- * @Date: 2024-03-12 16:53:55
- * @LastEditors: yanyuwangluo 1915241107@qq.com
- * @LastEditTime: 2024-03-12 17:50:56
- * @FilePath: \QRabbitPro\README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
 # **RabbitPro**
 
 ## 功能介绍
@@ -29,9 +21,9 @@
 > * [Ubuntu-docker安装教程](https://www.runoob.com/docker/ubuntu-docker-install.html)
 > * [Debian-docker安装教程](https://www.runoob.com/docker/debian-docker-install.html)
 > ### 2. 拉取RabbitPro镜像
-> > - ```docker pull yanyuwangluo/qrbbitpro:latest```  
+> > - ```docker pull ht944/rabbitpro:latest```  
 > > - 拉取不到时，设置代理：  
-> > - ```docker --registry-mirror=https://docker.mirrors.ustc.edu.cn pull yanyuwangluo/qrbbitpro:latest```
+> > - ```docker --registry-mirror=https://docker.mirrors.ustc.edu.cn pull ht944/rabbitpro:latest```
 > ### 3. 新建一个文件夹，用于存放RabbitPro的数据
 > ```mkdir rabbit```
 > ### 4.切换至rabbit文件夹，新建一个data文件夹，用于存放RabbitPro的数据，配置文件等
@@ -41,7 +33,7 @@
 > ### 5. 启动RabbitPro容器
 > *1234端口不要改，5701端口可以改成其他端口*  
 > *`--restart=always` 为容器设置自动重启，有需要自动添加*  
-> - ```docker run   --name rabbitpro -p 5701:1234  -d  -v  "$(pwd)"/data:/Rabbit/data -it yanyuwangluo/qrbbitpro:latest```
+> - ```docker run   --name rabbitpro -p 5701:1234  -d  -v  "$(pwd)"/data:/Rabbit/data -it ht944/rabbitpro:latest```
 > ### 6. 访问RabbitPro的管理页面
 > - ```http://ip:5701/admin```  
 > - 默认账号：admin
@@ -51,7 +43,7 @@
 > ### 7. 修改配置文件
 > - 进入配置文件界面：```http://ip:5701/admin#/settings/settings```
 > - 修改管理员账密，RabbitToken，ServerHost等，选取可用host，其他参数按需修改
-> - 每日上车人数大于20人的，建议配置登录代理，可用[星空(点我跳转)](https://www.xkdaili.com/?ic=4a5q2afd)、[携趣(点我跳转)](https://www.xiequ.cn/index.html?fddd8aac)等代理
+> - 每日上车人数大于20人的，建议配置登录代理，可用[携趣(点我跳转)](https://www.xiequ.cn/index.html?fddd8aac)、[星空(点我跳转)](http://www.xkdaili.com/?ic=4q4d4q5a)等代理
 ***
 ## 升级方法
 > 不要长时间不更新镜像，否则会出现无法更新的情况，同时数据会有问题，删除容器重建时，切记记得先更新镜像
